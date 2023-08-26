@@ -1,0 +1,1 @@
+2023-08-24 01:06:37.894121 | There was an issue sending a message | 'NoneType' object has no attribute 'send'
