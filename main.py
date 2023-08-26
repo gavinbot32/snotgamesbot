@@ -112,7 +112,9 @@ class Bot(commands.Bot):
 
         args = []
         args = message.content.split(" ")
-
+        for i in args:
+            if i in ARGS_IGNORE:
+                args = args.remove(i)
         if args[0].lower() in self.defCommands.keys():
 
             await self.defCommands.get(args[0].lower())(message,args)
@@ -226,8 +228,8 @@ class Bot(commands.Bot):
         #if args 2 isnt a username send an error message, otherwise send the list of the user
         id = message.author.id
         name = ""
+        print(len(args))
         if len(args) > 1:
-
             with open("stats.json", "r") as f:
                 stats = json.load(f)
                 for user in stats:

@@ -9,6 +9,7 @@ TIMER_DELAY_MAX = 36000
 MAR_ID = 562314750
 
 
+ARGS_IGNORE = ["\U000e0000"]
 
 BLACKLIST = ["snothunterbot", "StreamElements","marsnotbot","snotybot","SnotStats"]
 
