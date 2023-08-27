@@ -297,9 +297,8 @@ class Bot(commands.Bot):
 
         liveList = await self.fetch_streams([MAR_ID], None, None, None, None, "live")
         if liveList == None or len(liveList) <= 0:
-            self.newMessage("Every 3-10 hours a random emote is picked as a bounty, if you type the emote in chat you can claim the bounty and add the emote to your list (!bountyList)."
-                            "   Once a bounty is claimed no one else can claim it until it resets once the timer is up."
-                            " Note: this is spam proof, so sending paragraphs of emotes isn't going to claim the bounty. So don't make the chat messy with emotes, its not going to get you anywhere smh",context)
+            self.newMessage("Every 3-10 hours, a random emote becomes a bounty without warning. Type the emote in chat to claim and add it to your list (!bountyList)."
+                            " Once claimed, others must wait for the timer to reset. Spam won't work, so avoid cluttering the chat. smh",context)
 
     async def newBounty(self):
         self.bountyClaimed = False
