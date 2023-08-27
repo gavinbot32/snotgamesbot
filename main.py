@@ -22,7 +22,7 @@ class Bot(commands.Bot):
         # self.defCommands = {"!sginit" : self.gameInit,"!sgend" : self.endGame, "!newteam" : self.newTeam, "!sgjoin" : self.playerJoin, "!sgstart" : self.gameStart, "!sgadd" : self.addPlayer,
         #                     "!sgroster" : self.roster
         #                     }
-        self.defCommands = {"!bountyhelp" : self.bountyHelp, "!bountylist":self.bountyList, "!getstream": self.getStream}
+        self.defCommands = {"!bountyhelp" : self.bountyHelp, "!bountylist":self.bountyList, "!getstream": self.getStream, "!disability" : self.disablitity}
         self.curGame = None
         self.MESSAGES = []
         self.odd = True
@@ -121,6 +121,9 @@ class Bot(commands.Bot):
         print(args)
 
 
+    async def disablitity(self,message,args):
+        msg = "I was diagnosed with being a streamer but im more than my disability Okey"
+        self.newMessage(msg,message.channel)
 
     async def timeLeft(self,message,args):
         epochRemaining = self.targetTime - time.time()
