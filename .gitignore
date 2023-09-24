@@ -32,6 +32,13 @@ MANIFEST
 *.manifest
 *.spec
 
+#SnotGames Files
+config.json
+stats.json
+errorLog.txt
+leaderboard.json
+
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt

@@ -22,7 +22,7 @@ class Bot(commands.Bot):
         # self.defCommands = {"!sginit" : self.gameInit,"!sgend" : self.endGame, "!newteam" : self.newTeam, "!sgjoin" : self.playerJoin, "!sgstart" : self.gameStart, "!sgadd" : self.addPlayer,
         #                     "!sgroster" : self.roster
         #                     }
-        self.defCommands = {"!bountyhelp" : self.bountyHelp, "!bountylist":self.bountyList, "!getstream": self.getStream, "!disability" : self.disablitity, "PassTheBurrito" : self.burritoMessage, "MakeTheBurrito" : self.burritoMessage}
+        self.defCommands = {"!bountyhelp" : self.bountyHelp, "!bountylist":self.bountyList, "!getstream": self.getStream, "!disability" : self.disablitity}
         self.curGame = None
         self.MESSAGES = []
         self.odd = True
@@ -109,14 +109,15 @@ class Bot(commands.Bot):
 
 
 
-
+        msg = message.content.strip()
         args = []
-        args = message.content.split(" ")
+        args = msg.split(" ")
+        if args[0] == "PassTheBurrito"  or args[0] == "MakeTheBurrito":
+            await self.burritoMessage(message, args)
         for i in args:
             if i in ARGS_IGNORE:
                 args = args.remove(i)
         if args[0].lower() in self.defCommands.keys():
-
             await self.defCommands.get(args[0].lower())(message,args)
         print(args)
 
