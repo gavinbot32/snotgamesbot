@@ -22,7 +22,7 @@ class Bot(commands.Bot):
         # self.defCommands = {"!sginit" : self.gameInit,"!sgend" : self.endGame, "!newteam" : self.newTeam, "!sgjoin" : self.playerJoin, "!sgstart" : self.gameStart, "!sgadd" : self.addPlayer,
         #                     "!sgroster" : self.roster
         #                     }
-        self.defCommands = {"!bountyhelp" : self.bountyHelp, "!bountylist":self.bountyList, "!getstream": self.getStream, "!disability" : self.disablitity}
+        self.defCommands = {"!bountyhelp" : self.bountyHelp, "!bountylist":self.bountyList, "!getstream": self.getStream, "!disability" : self.disablitity, "PassTheBurrito" : self.burritoMessage, "MakeTheBurrito" : self.burritoMessage}
         self.curGame = None
         self.MESSAGES = []
         self.odd = True
@@ -223,6 +223,17 @@ class Bot(commands.Bot):
         self.curGame = SnotGame(context,self)
         self.curGame.setGM(message.author.name)
         self.newMessage(f'{message.author.name} You have created a new Snot Game, Type !sgJoin to register 4Salute',context)
+
+
+    async def burritoMessage(self,message,args):
+        context = message.channel
+        burritoPerc = random.randrange(1,100)
+        newMessage = "PassTheBurrito"
+        if burritoPerc >= 85:
+            newMessage = "PassTheBurrito"
+        else:
+            newMessage = "EatTheBurrito"
+        self.newMessage(newMessage,context)
 
 
     async def bountyList(self,message,args):
