@@ -112,13 +112,17 @@ class Bot(commands.Bot):
         msg = message.content.strip()
         args = []
         args = msg.split(" ")
-        if args[0] == "PassTheBurrito"  or args[0] == "MakeTheBurrito":
+        if args[0] == "PassTheBurrito" or args[0] == "MakeTheBurrito":
             await self.burritoMessage(message, args)
-        for i in args:
-            if i in ARGS_IGNORE:
-                args = args.remove(i)
-        if args[0].lower() in self.defCommands.keys():
-            await self.defCommands.get(args[0].lower())(message,args)
+        if args:
+            for x in args:
+                for i in x:
+                    if (not i.isalnum() and i != "!") or i in ARGS_IGNORE:
+                        if x and args and i:
+                            args = args.remove(x)
+        if args:
+            if args[0].lower() in self.defCommands.keys():
+                await self.defCommands.get(args[0].lower())(message,args)
         print(args)
 
 
@@ -230,7 +234,7 @@ class Bot(commands.Bot):
         context = message.channel
         burritoPerc = random.randrange(1,100)
         newMessage = "PassTheBurrito"
-        if burritoPerc >= 85:
+        if burritoPerc <= 85:
             newMessage = "PassTheBurrito"
         else:
             newMessage = "EatTheBurrito"
