@@ -22,13 +22,6 @@
         ]
     },
     {
-        "playerID": "244257549",
-        "username": "proxy137",
-        "bounties": [
-            "Based"
-        ]
-    },
-    {
         "playerID": "442344165",
         "username": "lowfilio",
         "bounties": [
@@ -200,21 +193,6 @@
         ]
     },
     {
-        "playerID": "157354296",
-        "username": "jumjumhigglypiggly",
-        "bounties": [
-            "MarSmash"
-        ]
-    },
-    {
-        "playerID": "29398454",
-        "username": "filation",
-        "bounties": [
-            "MarSmash",
-            "MarSmash"
-        ]
-    },
-    {
         "playerID": "526386762",
         "username": "feelthelove__",
         "bounties": [
@@ -232,14 +210,6 @@
         ]
     },
     {
-        "playerID": "117593086",
-        "username": "commandedtosub",
-        "bounties": [
-            "marNOW",
-            "marNOW"
-        ]
-    },
-    {
         "playerID": "543618523",
         "username": "lifepb",
         "bounties": [
@@ -247,59 +217,10 @@
         ]
     },
     {
-        "playerID": "504754639",
-        "username": "yespere",
-        "bounties": [
-            "marisnLurk",
-            "marE",
-            "marING",
-            "Crazy",
-            "marisnLurk",
-            "marKek",
-            "marKek",
-            "marisnLurk",
-            "MikuMeow",
-            "Based",
-            "Ugh",
-            "Crazy",
-            "Based",
-            "MarPain",
-            "Ugh",
-            "Based",
-            "marSmirk",
-            "catSCHIZO",
-            "MarVibe",
-            "Crazy",
-            "Ugh",
-            "MarPain",
-            "Based"
-        ]
-    },
-    {
-        "playerID": "90495696",
-        "username": "bubba_00",
-        "bounties": [
-            "marKek",
-            "MarSmash",
-            "marSmirk",
-            "MarPain"
-        ]
-    },
-    {
         "playerID": "1016009869",
         "username": "mike7080",
         "bounties": [
             "Based"
-        ]
-    },
-    {
-        "playerID": "210443347",
-        "username": "jorn_t",
-        "bounties": [
-            "marE",
-            "catSCHIZO",
-            "MarPain",
-            "MarVibe"
         ]
     },
     {
@@ -338,22 +259,6 @@
         ]
     },
     {
-        "playerID": "237719657",
-        "username": "fossabot",
-        "bounties": [
-            "marING"
-        ]
-    },
-    {
-        "playerID": "141200569",
-        "username": "rird_",
-        "bounties": [
-            "Crazy",
-            "marING",
-            "catSCHIZO"
-        ]
-    },
-    {
         "playerID": "170645708",
         "username": "stretchitz",
         "bounties": [
@@ -370,27 +275,82 @@
         ]
     },
     {
-        "playerID": "89744907",
-        "username": "floteuhh",
+        "playerID": "154649067",
+        "username": "gavinbot32",
         "bounties": [
-            "Based",
+            "mikufall",
+            "MarStare",
+            "marSmirk",
+            "marSmirk",
+            "MarStare",
+            "marKek",
+            "marKek",
+            "marNOW",
+            "Ugh",
+            "marE",
+            "Ugh",
+            "marE",
+            "Crazy"
+        ]
+    },
+    {
+        "playerID": "117593086",
+        "username": "commandedtosub",
+        "bounties": [
+            "marNOW",
+            "marNOW",
+            "MarVibe"
+        ]
+    },
+    {
+        "playerID": "157354296",
+        "username": "jumjumhigglypiggly",
+        "bounties": [
             "MarSmash",
+            "marING"
+        ]
+    },
+    {
+        "playerID": "237719657",
+        "username": "fossabot",
+        "bounties": [
+            "marING",
+            "marING"
+        ]
+    },
+    {
+        "playerID": "141200569",
+        "username": "rird_",
+        "bounties": [
             "Crazy",
             "marING",
-            "marING",
-            "marING",
+            "catSCHIZO",
             "Ugh"
         ]
     },
     {
-        "playerID": "82798561",
-        "username": "yopipes",
+        "playerID": "90495696",
+        "username": "bubba_00",
         "bounties": [
-            "marE",
-            "Ugh",
-            "marNOW",
-            "Based",
-            "Based"
+            "marKek",
+            "MarSmash",
+            "marSmirk",
+            "MarPain",
+            "MarPain"
+        ]
+    },
+    {
+        "playerID": "222040829",
+        "username": "husvetteir",
+        "bounties": [
+            "marSmirk"
+        ]
+    },
+    {
+        "playerID": "101798963",
+        "username": "drdbh123",
+        "bounties": [
+            "Crazy"
         ]
     },
     {
@@ -406,7 +366,147 @@
             "MarVibe",
             "marE",
             "Ugh",
+            "Ugh",
+            "MarVibe",
+            "MikuMeow"
+        ]
+    },
+    {
+        "playerID": "29398454",
+        "username": "filation",
+        "bounties": [
+            "MarSmash",
+            "MarSmash",
+            "MarPain",
+            "MarPain",
+            "MarPain"
+        ]
+    },
+    {
+        "playerID": "425960625",
+        "username": "phyr__",
+        "bounties": [
+            "DECAY"
+        ]
+    },
+    {
+        "playerID": "53895539",
+        "username": "capybarha",
+        "bounties": [
+            "MarVibe"
+        ]
+    },
+    {
+        "playerID": "504754639",
+        "username": "yespere",
+        "bounties": [
+            "marisnLurk",
+            "marE",
+            "marING",
+            "Crazy",
+            "marisnLurk",
+            "marKek",
+            "marKek",
+            "marisnLurk",
+            "MikuMeow",
+            "Based",
+            "Ugh",
+            "Crazy",
+            "Based",
+            "MarPain",
+            "Ugh",
+            "Based",
+            "marSmirk",
+            "catSCHIZO",
+            "MarVibe",
+            "Crazy",
+            "Ugh",
+            "MarPain",
+            "Based",
+            "MarPain",
             "Ugh"
+        ]
+    },
+    {
+        "playerID": "101294634",
+        "username": "korrbinn",
+        "bounties": [
+            "marNOW"
+        ]
+    },
+    {
+        "playerID": "70073332",
+        "username": "jerrythelawyer",
+        "bounties": [
+            "marING"
+        ]
+    },
+    {
+        "playerID": "79378800",
+        "username": "scruffyythejanitor",
+        "bounties": [
+            "DECAY",
+            "MarSmash"
+        ]
+    },
+    {
+        "playerID": "89744907",
+        "username": "floteuhh",
+        "bounties": [
+            "Based",
+            "MarSmash",
+            "Crazy",
+            "marING",
+            "marING",
+            "marING",
+            "Ugh",
+            "Ugh",
+            "Ugh",
+            "Ugh",
+            "Ugh",
+            "marSmirk",
+            "Ugh"
+        ]
+    },
+    {
+        "playerID": "210443347",
+        "username": "jorn_t",
+        "bounties": [
+            "marE",
+            "catSCHIZO",
+            "MarPain",
+            "MarVibe",
+            "Crazy"
+        ]
+    },
+    {
+        "playerID": "82798561",
+        "username": "yopipes",
+        "bounties": [
+            "marE",
+            "Ugh",
+            "marNOW",
+            "Based",
+            "Based",
+            "Based",
+            "marSmirk"
+        ]
+    },
+    {
+        "playerID": "244257549",
+        "username": "proxy137",
+        "bounties": [
+            "Based",
+            "Based"
+        ]
+    },
+    {
+        "playerID": "267442810",
+        "username": "vasroo",
+        "bounties": [
+            "marING",
+            "marING",
+            "marING"
         ]
     },
     {
@@ -443,32 +543,11 @@
             "marE",
             "Crazy",
             "Crazy",
-            "marE"
-        ]
-    },
-    {
-        "playerID": "267442810",
-        "username": "vasroo",
-        "bounties": [
-            "marING",
-            "marING"
-        ]
-    },
-    {
-        "playerID": "154649067",
-        "username": "gavinbot32",
-        "bounties": [
-            "mikufall",
-            "MarStare",
-            "marSmirk",
-            "marSmirk",
-            "MarStare",
-            "marKek",
-            "marKek",
-            "marNOW",
-            "Ugh",
             "marE",
-            "Ugh",
+            "marE",
+            "Crazy",
+            "Crazy",
+            "Crazy",
             "marE",
             "Crazy"
         ]
