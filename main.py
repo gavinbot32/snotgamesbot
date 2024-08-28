@@ -87,7 +87,7 @@ class Bot(commands.Bot):
             except Exception as e:
                 self.updateLog(f"bot had an issue processing {message.author.name} message", e)
 
-        if message.channel.name == "gavinbot32":
+        if message.channel.name == "marisnot12":
             self.context = message.channel
 
         if self.bounty == "" or self.bounty == None:
