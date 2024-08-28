@@ -30,6 +30,7 @@ class Bot(commands.Bot):
         self.context = None
         self.bountyClaimed = False
         self.targetTime = 0
+        self.messageFlip = 0;
         #json variables
         self.configDict = set()
         with open("config.json","r") as f:
@@ -38,13 +39,14 @@ class Bot(commands.Bot):
 
     @routines.routine(seconds=1.5,iterations=0)
     async def messageFunnel(self):
-        self.odd = not self.odd
         if(len(self.MESSAGES)>0):
-            msgObj= self.MESSAGES.pop(0)
+            self.odd = not self.odd
+            msgObj = self.MESSAGES.pop(0)
             msg = msgObj.msg
             ctx = msgObj.ctx
             try:
-                await ctx.send(msg+('  ' if self.odd else ''))
+                print(msg)
+                await ctx.send(msg+(' \U000e0000' if self.odd else ''))
             except Exception as e:
                 self.updateLog("There was an issue sending a message", e)
 
@@ -69,11 +71,15 @@ class Bot(commands.Bot):
     async def event_message(self, message):
         # Messages with echo set to True are messages sent by the bot...
         # For now we just want to ignore them...
+
+
         if message.echo:
             return
         if message.author.name in BLACKLIST:
             return
         # Print the contents of our message to console...
+
+        print(message.raw_data)
 
         if (message.channel.name == "marisnot12"):
             try:
@@ -81,7 +87,7 @@ class Bot(commands.Bot):
             except Exception as e:
                 self.updateLog(f"bot had an issue processing {message.author.name} message", e)
 
-        if message.channel.name == "marisnot12":
+        if message.channel.name == "gavinbot32":
             self.context = message.channel
 
         if self.bounty == "" or self.bounty == None:
@@ -114,12 +120,16 @@ class Bot(commands.Bot):
         args = msg.split(" ")
         if args[0] == "PassTheBurrito" or args[0] == "MakeTheBurrito":
             await self.burritoMessage(message, args)
-        if args:
-            for x in args:
-                for i in x:
-                    if (not i.isalnum() and i != "!") or i in ARGS_IGNORE:
-                        if x and args and i:
-                            args = args.remove(x)
+
+
+        # if args:
+        #     for word in args:
+        #         for letter in word:
+        #             #Letter is not a number or letter, and if letter is not ! or if letter is in ARGS_IGNORE
+        #             if (not letter.isalnum() and letter != "!") or letter in ARGS_IGNORE:
+        #                 if word and args and letter:
+        #                     print("Removing " + word)
+        #                     args = args.remove(word)
         if args:
             if args[0].lower() in self.defCommands.keys():
                 await self.defCommands.get(args[0].lower())(message,args)
